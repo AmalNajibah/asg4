@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<div id="page-wrap">
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
 <h1>Result</h1>
 
@@ -19,16 +20,13 @@
     
     if ($answer1 == "A") { $totalCorrect++; }
     if ($answer2 == "C") { $totalCorrect++; }
-    if ($answer3 == "A") { $totalCorrect++; }
+    if ($answer3 == "C") { $totalCorrect++; }
     if ($answer4 == "B") { $totalCorrect++; }
     if ($answer5 == "D") { $totalCorrect++; }
     
     echo "<div id='results'>$totalCorrect / 5 correct</div>";
     
 ?>
-
-</div>, initial-scale=1.0">
-    <title>Document</title>
 </head>
 <body>
     
