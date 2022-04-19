@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=<div id="page-wrap">
     <link rel="stylesheet" type="text/css" href="style.css" />
 
-    <?php
+<?php
 if(isset($_POST['submit'])) {
-    echo "<div class='quizbn'>Welcome to Quiz.bn</div>";
+    echo "<h1 class='quizbn'>Welcome to Quiz.bn ";
     echo $_POST['username'];
-    echo "<br><br>";
+    echo "</h1>";
+    echo "<h3 style='color:white'>1) untuk mysql rahmah, sini tu kali..kalau ya login ya save ke db</h3>";
     }
 ?>
 
 <body class="questionbkgrd">
 <form action="result.php" method="post" id="quiz">
-<!-- <h1 class="quizbn">Welcome to Quiz.bn</h1> -->
-<h3 style="color:white;">timer function here(mus)</h2>
+<h3 style="color:white;">2) Timer function here(mus)</h3>
     <ol>
         <li>
             <h3>Can you guess which one is grape?</h3>
