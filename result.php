@@ -5,13 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<div id="page-wrap">
     <link rel="stylesheet" type="text/css" href="style.css" />
-
+   
+<body class="questionbkgrd">
 <h1>Result</h1>
 
 <?php
-
-
-    
     $answer1 = $_POST['question-1-answers'];
     $answer2 = $_POST['question-2-answers'];
     $answer3 = $_POST['question-3-answers'];
@@ -30,7 +28,9 @@
     
 ?>
 </head>
-<body>
+
+<h2>Scoreboard Top 5 goes here(mus)</h2>
+
     
 </body>
 </html>

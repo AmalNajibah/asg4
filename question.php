@@ -6,16 +6,10 @@
     <meta name="viewport" content="width=<div id="page-wrap">
     <link rel="stylesheet" type="text/css" href="style.css" />
 
-<?php
-//get the data
-session_start();
-$username = $_POST['username'];
-?>
-
 <body class="questionbkgrd">
-<h1>Welcome to Quiz.bn</h1>
 <form action="result.php" method="post" id="quiz">
-   
+<h1 class="quizbn">Welcome to Quiz.bn</h1>
+<h3 style="color:white;">timer function here(mus)</h2>
     <ol>
         <li>
             <h3>Can you guess which one is grape?</h3>
@@ -146,7 +140,7 @@ $username = $_POST['username'];
     
     </ol>
     
-    <input type="submit" value="Submit" class="submitbtn" />
+    <button id="subqsbtn" type="submit" value="Submit" class="submitbtn">Submit</button>
 
 </form>
 
