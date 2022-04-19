@@ -1,0 +1,1 @@
+amal yang tutorial untuk apa? kalau yang tani send as mp4 tu ali2 file nya
