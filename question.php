@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=<div id="page-wrap">
     <link rel="stylesheet" type="text/css" href="style.css" />
 
-<h1></h1>
+<?php
+//get the data
+session_start();
+$username = $_POST['username'];
+?>
 
+<body class="questionbkgrd">
+<h1>Welcome to Quiz.bn</h1>
 <form action="result.php" method="post" id="quiz">
+   
     <ol>
         <li>
             <h3>Can you guess which one is grape?</h3>
@@ -142,6 +149,8 @@
     <input type="submit" value="Submit" class="submitbtn" />
 
 </form>
+
+
 
 </body>
 </html>

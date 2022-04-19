@@ -9,6 +9,8 @@
 <h1>Result</h1>
 
 <?php
+
+
     
     $answer1 = $_POST['question-1-answers'];
     $answer2 = $_POST['question-2-answers'];

@@ -1,5 +1,14 @@
-body{ font: 14px Georgia, serif; background-color: #046307; }
+/* body{ font: 14px Georgia, serif; background-color: #046307; } */
 
+input, button {
+   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+   font-size: 12pt;
+   color: #333;
+}
+
+.questionbkgrd{
+   background-color: #046307;
+}
 #page-wrap { width: 500px; margin: 0 auto;}
 
 h1  { margin: 25px 0; font: 18px Georgia, Serif; text-transform: uppercase; letter-spacing: 3px; }
@@ -44,3 +53,18 @@ h1  { margin: 25px 0; font: 18px Georgia, Serif; text-transform: uppercase; lett
     border: 1px WHITE; 
     border-radius: 25px;
   }
+
+  button {
+   background-color: #09aeae;
+   color: #FFF;
+   border: 0;
+   border-radius: 10px;
+   padding: 1em 2em;
+   cursor: pointer;
+}
+
+button[disabled] {
+   cursor: not-allowed;
+   opacity: .5;
+}
+
