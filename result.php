@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=<div id="page-wrap">
     <link rel="stylesheet" type="text/css" href="style.css" />
    
-<body class="questionbkgrd">
-<h1>Result</h1>
+<body>
+<h1 id='results'>Your Score: </h1>
 
 <?php
-    $answer1 = $_POST['question-1-answers'];
-    $answer2 = $_POST['question-2-answers'];
-    $answer3 = $_POST['question-3-answers'];
-    $answer4 = $_POST['question-4-answers'];
-    $answer5 = $_POST['question-5-answers'];
+    $answer1 = $_POST['answerqs1'];
+    $answer2 = $_POST['answerqs2'];
+    $answer3 = $_POST['answerqs3'];
+    $answer4 = $_POST['answerqs4'];
+    $answer5 = $_POST['answerqs5'];
 
     $totalCorrect = 0;
     
@@ -29,8 +29,9 @@
 ?>
 </head>
 
-<h2>Scoreboard Top 5 goes here(mus)</h2>
-
+<h2>Scoreboard Top 5 goes here (mus)</h2><br><br>
+<a href="question.php" class="playagainbtn">Play again</a><br><br>
+<a href="index.php" class="resetbtn">Reset</a><br><br>
     
 </body>
 </html>

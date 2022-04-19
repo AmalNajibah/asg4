@@ -15,26 +15,26 @@
             <h3>Can you guess which one is grape?</h3>
             <div id="b">
                 <img id="b" src="img/grape.png" alt=""><br>
-                <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
-                <label for="question-1-answers-A">A)  </label>
+                <input type="radio" name="answerqs1" id="answerqs1-A" value="A" />
+                <label for="answerqs1-A">A)  </label>
             </div>
             
             <div id="b">
                 <img id="b" src="img/strawberry.jpg" alt=""><br>
-                <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
-                <label for="question-1-answers-B">B)</label>
+                <input type="radio" name="answerqs1" id="answerqs1-B" value="B" />
+                <label for="answerqs1-B">B)</label>
             </div>
             
             <div id="b">
             <img id="b" src="img/orange.png" alt=""><br>
-                <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
-                <label for="question-1-answers-C">C)</label>
+                <input type="radio" name="answerqs1" id="answerqs1-C" value="C" />
+                <label for="answerqs1-C">C)</label>
             </div>
             
             <div id="b">
             <img id="b" src="img/banana.jpg" alt=""><br>
-                <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
-                <label for="question-1-answers-D">D)</label>
+                <input type="radio" name="answerqs1" id="answerqs1-D" value="D" />
+                <label for="answerqs1-D">D)</label>
             </div>
         
         </li>
@@ -43,23 +43,23 @@
             <h3>How many colors in rainbow?</h3>
             
             <div>
-                <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
-                <label for="question-2-answers-A">A) 12</label>
+                <input type="radio" name="answerqs2" id="answerqs2-A" value="A" />
+                <label for="answerqs2-A">A) 12</label>
             </div>
             
             <div>
-                <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
-                <label for="question-2-answers-B">B) 10</label>
+                <input type="radio" name="answerqs2" id="answerqs2-B" value="B" />
+                <label for="answerqs2-B">B) 10</label>
             </div>
             
             <div>
-                <input type="radio" name="question-2-answers" id="question-2-answers-C" value="C" />
-                <label for="question-2-answers-C">C) 7</label>
+                <input type="radio" name="answerqs2" id="answerqs2-C" value="C" />
+                <label for="answerqs2-C">C) 7</label>
             </div>
             
             <div>
-                <input type="radio" name="question-2-answers" id="question-2-answers-D" value="D" />
-                <label for="question-2-answers-D">D) 20</label>
+                <input type="radio" name="answerqs2" id="answerqs2-D" value="D" />
+                <label for="answerqs2-D">D) 20</label>
             </div>
         
         </li>
@@ -70,26 +70,26 @@
             
             <div id="b">
                 <img id="b" src="img/star.jpg" alt=""><br>
-                <input type="radio" name="question-3-answers" id="question-3-answers-A" value="A" />
-                <label for="question-3-answers-A">A)</label>
+                <input type="radio" name="answerqs3" id="answerqs3-A" value="A" />
+                <label for="answerqs3-A">A)</label>
             </div>
             
             <div id="b">
                 <img id="b" src="img/circle.jpg" alt=""><br>
-                <input type="radio" name="question-3-answers" id="question-3-answers-B" value="B" />
-                <label for="question-3-answers-B">B)</label>
+                <input type="radio" name="answerqs3" id="answerqs3-B" value="B" />
+                <label for="answerqs3-B">B)</label>
             </div>
             
             <div id="b">
                 <img id="b" src="img/square.jpg" alt=""><br>
-                <input type="radio" name="question-3-answers" id="question-3-answers-C" value="C" />
-                <label for="question-3-answers-C">C)</label>
+                <input type="radio" name="answerqs3" id="answerqs3-C" value="C" />
+                <label for="answerqs3-C">C)</label>
             </div>
             
             <div id="b">
                 <img id="b" src="img/oval.jpg" alt=""><br>
-                <input type="radio" name="question-3-answers" id="question-3-answers-D" value="D" />
-                <label for="question-3-answers-D">D) </label>
+                <input type="radio" name="answerqs3" id="answerqs3-D" value="D" />
+                <label for="answerqs3-D">D) </label>
             </div>
         
         </li>
@@ -100,14 +100,14 @@
             
             <div id="b">
                 <img id="b" src="img/small.png" alt=""><br>
-                <input type="radio" name="question-4-answers" id="question-4-answers-A" value="A" />
-                <label for="question-4-answers-A">A)</label>
+                <input type="radio" name="answerqs4" id="answerqs4-A" value="A" />
+                <label for="answerqs4-A">A)</label>
             </div>
             
             <div id="b">
                 <img id="b" src="img/long.jpg" alt=""><br>
-                <input type="radio" name="question-4-answers" id="question-4-answers-B" value="B" />
-                <label for="question-4-answers-B">B)</label>
+                <input type="radio" name="answerqs4" id="answerqs4-B" value="B" />
+                <label for="answerqs4-B">B)</label>
             </div>
         
         </li>
@@ -117,30 +117,30 @@
             <h3>Fill in the missing number 23,___,___,26,___,</h3>
             
             <div>
-                <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
-                <label for="question-5-answers-A">A)23,25,22,26,27</label>
+                <input type="radio" name="answerqs5" id="answerqs5-A" value="A" />
+                <label for="answerqs5-A">A)23,25,22,26,27</label>
             </div>
             
             <div>
-                <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
-                <label for="question-5-answers-B">B)23,24,27,26,25</label>
+                <input type="radio" name="answerqs5" id="answerqs5-B" value="B" />
+                <label for="answerqs5-B">B)23,24,27,26,25</label>
             </div>
             
             <div>
-                <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
-                <label for="question-5-answers-C">C)23,27,24,26,25</label>
+                <input type="radio" name="answerqs5" id="answerqs5-C" value="C" />
+                <label for="answerqs5-C">C)23,27,24,26,25</label>
             </div>
             
             <div>
-                <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
-                <label for="question-5-answers-D">D)23,24,25,26,27</label>
+                <input type="radio" name="answerqs5" id="answerqs5-D" value="D" />
+                <label for="answerqs5-D">D)23,24,25,26,27</label>
             </div>
         
         </li>
     
     </ol>
     
-    <button id="subqsbtn" type="submit" value="Submit" class="submitbtn">Submit</button>
+    <button id="subqsbtn" type="submit" value="Submit" class="submitbtn">Submit answer</button>
 
 </form>
 

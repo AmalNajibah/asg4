@@ -9,7 +9,7 @@ input, button {
 .questionbkgrd{
    background-color: #046307;
 }
-#page-wrap { width: 500px; margin: 0 auto;}
+/* #page-wrap { width: 500px; margin: 0 auto;} */
 
 h1  { margin: 25px 0; font: 18px Georgia, Serif; text-transform: uppercase; letter-spacing: 3px; }
 
@@ -104,6 +104,21 @@ input[type=text] {
    background-color: #whte;
    color: #FFF;
 
+}
+
+.playagainbtn, .resetbtn {
+   display: inline-block;
+   font-size: 12pt;
+   margin-top: 30px;
+}
+
+.playagainbtn{
+   color: green;
+   
+}
+
+.resetbtn{
+   color: red;
 }
 
 
