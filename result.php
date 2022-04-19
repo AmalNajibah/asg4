@@ -18,7 +18,7 @@
     $totalCorrect = 0;
     
     if ($answer1 == "A") { $totalCorrect++; }
-    if ($answer2 == "D") { $totalCorrect++; }
+    if ($answer2 == "C") { $totalCorrect++; }
     if ($answer3 == "A") { $totalCorrect++; }
     if ($answer4 == "B") { $totalCorrect++; }
     if ($answer5 == "D") { $totalCorrect++; }
