@@ -20,7 +20,7 @@
             <input type="text" id="username" name="username" required />
         </div><br><br>
 
-        <button type="submit">Start</button>
+        <button type="submit" value="Submit" name="submit">Start</button>
     </div>
 </form>
 

@@ -6,9 +6,17 @@
     <meta name="viewport" content="width=<div id="page-wrap">
     <link rel="stylesheet" type="text/css" href="style.css" />
 
+    <?php
+if(isset($_POST['submit'])) {
+    echo "<div class='quizbn'>Welcome to Quiz.bn</div>";
+    echo $_POST['username'];
+    echo "<br><br>";
+    }
+?>
+
 <body class="questionbkgrd">
 <form action="result.php" method="post" id="quiz">
-<h1 class="quizbn">Welcome to Quiz.bn</h1>
+<!-- <h1 class="quizbn">Welcome to Quiz.bn</h1> -->
 <h3 style="color:white;">timer function here(mus)</h2>
     <ol>
         <li>
@@ -143,6 +151,8 @@
     <button id="subqsbtn" type="submit" value="Submit" class="submitbtn">Submit answer</button>
 
 </form>
+
+
 
 
 
