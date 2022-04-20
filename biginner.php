@@ -19,7 +19,7 @@ if(isset($_POST['biginner'])) {
 <form action="biginnerresult.php" method="post" id="quiz">
 <h3 style="color:white;">2) Timer function here (mus)</h3>
     <ol>
-        <li>
+        <li class="biginnerli">
             <h3>Can you guess which one is grape?</h3>
             <div id="b">
                 <img id="b" src="img/grape.png" alt=""><br>
@@ -45,9 +45,9 @@ if(isset($_POST['biginner'])) {
                 <label for="answerqs1-D">D)</label>
             </div>
         
-        </li>
+        </li><br>
         
-        <li>
+        <li class="biginnerli">
             <h3>How many colors in rainbow?</h3>
             
             <div>
@@ -70,9 +70,9 @@ if(isset($_POST['biginner'])) {
                 <label for="answerqs2-D">D) 20</label>
             </div>
         
-        </li>
+        </li><br>
         
-        <li>
+        <li class="biginnerli">
         
             <h3>Tick the shape of square</h3>
             
@@ -100,9 +100,9 @@ if(isset($_POST['biginner'])) {
                 <label for="answerqs3-D">D) </label>
             </div>
         
-        </li>
+        </li><br>
         
-        <li>
+        <li class="biginnerli">
         
             <h3>Select the longer pencil</h3>
             
@@ -118,9 +118,9 @@ if(isset($_POST['biginner'])) {
                 <label for="answerqs4-B">B)</label>
             </div>
         
-        </li>
+        </li><br>
         
-        <li>
+        <li class="biginnerli">
         
             <h3>Fill in the missing number 23,___,___,26,___,</h3>
             
@@ -144,11 +144,11 @@ if(isset($_POST['biginner'])) {
                 <label for="answerqs5-D">D)23,24,25,26,27</label>
             </div>
         
-        </li>
+        </li><br>
     
     </ol>
     
-    <button id="subqsbtn" type="submit" value="Submit" class="submitbtn">Submit answer</button>
+    <button id="subqsbtn" type="submit" value="Submit" class="submitbtn">Submit answer</button><br><br>
 
 </form>
 

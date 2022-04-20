@@ -4,7 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<div id="page-wrap">
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+<style>
+
+body{
+    background-color: #046307;
+}
+.advanceli{
+   background: yellow; 
+   padding: 10px; 
+   border: 1px white; 
+   border-radius: 25px;
+ }
+
+ 
+ button {
+   background-color: #09aeae;
+   color: #FFF;
+   border: 0;
+   border-radius: 10px;
+   padding: 1em 2em;
+   cursor: pointer;
+   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+   font-size: 12pt;
+   color: black;
+   text-align: center;
+   text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+}
+
+button:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+
+
+</style>
+
 
 <?php
 if(isset($_POST['advance'])) {
@@ -15,11 +57,11 @@ if(isset($_POST['advance'])) {
     }
 ?>
 
-<body class="questionbkgrd">
+<body>
 <form action="advanceresult.php" method="post" id="quiz">
 <h3 style="color:white;">2) Timer function here (mus)</h3>
     <ol>
-        <li>
+        <li class="advanceli">
             <h3>I am big, I have big ears. I have two long tisks. Who am I?</h3>
             <div>
                 <input type="radio" name="advance1" id="advance1-A" value="A" />
@@ -41,9 +83,9 @@ if(isset($_POST['advance'])) {
                 <label for="advance1-D">D)I am an ant</label>
             </div>
         
-        </li>
+        </li><br><br>
         
-        <li>
+        <li class="advanceli">
             <h3>Fill in the blank. The students are _______ their notes.</h3>
             
             <div>
@@ -53,7 +95,7 @@ if(isset($_POST['advance'])) {
             
             <div>
                 <input type="radio" name="advance2" id="advance2-B" value="B" />
-                <label for="advance2-B">B)Writterb</label>
+                <label for="advance2-B">B)Writter</label>
             </div>
             
             <div>
@@ -66,9 +108,9 @@ if(isset($_POST['advance'])) {
                 <label for="advance2-D">D)Write</label>
             </div>
         
-        </li>
+        </li><br><br>
         
-        <li>
+        <li class="advanceli">
         
             <h3>identify the correct sentence</h3>
             
@@ -92,9 +134,9 @@ if(isset($_POST['advance'])) {
                 <label for="advance3-D">D)Waiting for the storm to stop, I was anxiously looking out of the window.</label>
             </div>
         
-        </li>
+        </li><br><br>
         
-        <li>
+        <li class="advanceli">
         
             <h3>What is 16+20?</h3>
             <div>
@@ -117,9 +159,9 @@ if(isset($_POST['advance'])) {
                 <label for="advance4-B">D)16</label>
             </div>
         
-        </li>
+        </li><br><br>
         
-        <li>
+        <li class="advanceli">
         
             <h3>Which part of body helps us to know the taste of candy?</h3>
             
@@ -143,11 +185,11 @@ if(isset($_POST['advance'])) {
                 <label for="advance5-D">D)Ears</label>
             </div>
         
-        </li>
+        </li><br>
     
     </ol>
     
-    <button id="subqsbtn" type="submit" value="Submit" class="submitbtn">Submit answer</button>
+    <button id="subqsbtn" type="submit" value="Submit">Submit answer</button><br><br>
 
 </form>
 

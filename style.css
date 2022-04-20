@@ -9,6 +9,7 @@ input, button {
 .questionbkgrd{
    background-color: #046307;
 }
+
 /* #page-wrap { width: 500px; margin: 0 auto;} */
 
 h1  { margin: 25px 0; font: 18px Georgia, Serif; text-transform: uppercase; letter-spacing: 3px; }
@@ -52,12 +53,14 @@ h1.quizbn{
     /* background-color: yellow;  */
   }
 
-  li{
+  .biginnerli{
     background: yellow; 
     padding: 10px; 
     border: 1px WHITE; 
     border-radius: 25px;
   }
+
+  
 
   .login h1, .login h2 {
    text-align: center;
@@ -120,6 +123,8 @@ input[type=text] {
 .resetbtn{
    color: red;
 }
+
+
 
 
 
