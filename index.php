@@ -20,7 +20,9 @@
             <input type="text" id="username" name="username" required />
         </div><br><br>
 
-        <button type="submit" value="Submit" name="submit">Start</button>
+        <h2>Choose your level</h2><br><br>
+        <button type="submit" value="Submit" name="submit">Biginner</button>
+        <button type="submit" value="Submit" name="submit">Advance</button>
     </div>
 </form>
 
