@@ -92,13 +92,6 @@ button[disabled] {
    text-align: center;
 }
 
-.bkgrdindex{
-   background-image: url('img/index.jpg');
-   background-repeat: no-repeat;
-   background-attachment: fixed;  
-   background-size: cover;
-}
-
 input[type=text] {
    border-radius: 10px;
    border: 1px solid black;

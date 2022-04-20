@@ -10,7 +10,7 @@
 
 <body class="bkgrdindex">
 
-<form class="background" action="question.php" method="post">
+<form class="background" action="biginner.php" method="post">
 <div class="login">
         <h1>Start playing Quiz.bn!</h1>
         <h2>Please fill in your names</h2><br><br>
@@ -20,9 +20,8 @@
             <input type="text" id="username" name="username" required />
         </div><br><br>
 
-        <h2>Choose your level</h2><br><br>
-        <button type="submit" value="Submit" name="submit">Biginner</button>
-        <button type="submit" value="Submit" name="submit">Advance</button>
+        <button type="submit" value="Submit" name="biginner">Biginner</button>
+        <button type="submit" value="Submit" name="advance">Advance</button>
     </div>
 </form>
 
