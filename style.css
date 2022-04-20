@@ -62,17 +62,17 @@ h1.quizbn{
 
   
 
-  .login h1, .login h2 {
+  /* .login h1, .login h2 {
    text-align: center;
 }
 
 .login input {
   width: 100%;
-}
+} */
 
-.welcome .player-name {
+/* .welcome .player-name {
    margin: 30px 0;
-}
+} */
 
 button {
    background-color: #09aeae;
@@ -88,20 +88,20 @@ button[disabled] {
    opacity: .5;
 }
 
-.bkgrdindex, input, button {
+/* .bkgrdindex, input, button {
    font-family: 'Roboto', Arial, Helvetica, sans-serif;
    font-size: 12pt;
    color: #333;
    text-align: center;
-}
+} */
 
-input[type=text] {
+/* input[type=text] {
    border-radius: 10px;
    border: 1px solid black;
    margin: 3px 0;
    width: 265px;
    padding: 8px 5px;
-}
+} */
 
 #subqsbtn{
    background-color: whte;
