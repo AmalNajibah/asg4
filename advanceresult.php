@@ -10,19 +10,19 @@
 <h1 id='results'>Your Score: </h1>
 
 <?php
-    $answer1 = $_POST['answerqs1'];
-    $answer2 = $_POST['answerqs2'];
-    $answer3 = $_POST['answerqs3'];
-    $answer4 = $_POST['answerqs4'];
-    $answer5 = $_POST['answerqs5'];
+    $answer1 = $_POST['advance1'];
+    $answer2 = $_POST['advance2'];
+    $answer3 = $_POST['advance3'];
+    $answer4 = $_POST['advance4'];
+    $answer5 = $_POST['advance5'];
 
     $totalCorrect = 0;
     
-    if ($answer1 == "A") { $totalCorrect++; }
+    if ($answer1 == "C") { $totalCorrect++; }
     if ($answer2 == "C") { $totalCorrect++; }
-    if ($answer3 == "C") { $totalCorrect++; }
-    if ($answer4 == "B") { $totalCorrect++; }
-    if ($answer5 == "D") { $totalCorrect++; }
+    if ($answer3 == "D") { $totalCorrect++; }
+    if ($answer4 == "A") { $totalCorrect++; }
+    if ($answer5 == "B") { $totalCorrect++; }
     
     echo "<div id='results'>$totalCorrect / 5 correct</div>";
     

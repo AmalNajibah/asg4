@@ -22,48 +22,48 @@ if(isset($_POST['advance'])) {
         <li>
             <h3>I am big, I have big ears. I have two long tisks. Who am I?</h3>
             <div>
-                <input type="radio" name="answerqs1" id="answerqs1-A" value="A" />
-                <label for="answerqs1-A">A)I am a cat</label>
+                <input type="radio" name="advance1" id="advance1-A" value="A" />
+                <label for="advance1-A">A)I am a cat</label>
             </div>
             
             <div>
-                <input type="radio" name="answerqs1" id="answerqs1-B" value="B" />
-                <label for="answerqs1-B">B) I am a butterfly </label>
+                <input type="radio" name="advance1" id="advance1-B" value="B" />
+                <label for="advance1-B">B) I am a butterfly </label>
             </div>
             
             <div>
-                <input type="radio" name="answerqs1" id="answerqs1-C" value="C" />
-                <label for="answerqs1-C">C)I am an elephant.</label>
+                <input type="radio" name="advance1" id="advance1-C" value="C" />
+                <label for="advance1-C">C)I am an elephant.</label>
             </div>
             
             <div>
-                <input type="radio" name="answerqs1" id="answerqs1-D" value="D" />
-                <label for="answerqs1-D">D)I am an ant</label>
+                <input type="radio" name="advance1" id="advance1-D" value="D" />
+                <label for="advance1-D">D)I am an ant</label>
             </div>
         
         </li>
         
         <li>
-            <h3>Fill in the blank. The studnts are _______ their notes.</h3>
+            <h3>Fill in the blank. The students are _______ their notes.</h3>
             
             <div>
-                <input type="radio" name="answerqs2" id="answerqs2-A" value="A" />
-                <label for="answerqs2-A">A)Wrote</label>
+                <input type="radio" name="advance2" id="advance2-A" value="A" />
+                <label for="advance2-A">A)Wrote</label>
             </div>
             
             <div>
-                <input type="radio" name="answerqs2" id="answerqs2-B" value="B" />
-                <label for="answerqs2-B">B)Writterb</label>
+                <input type="radio" name="advance2" id="advance2-B" value="B" />
+                <label for="advance2-B">B)Writterb</label>
             </div>
             
             <div>
-                <input type="radio" name="answerqs2" id="answerqs2-C" value="C" />
-                <label for="answerqs2-C">C)Writing</label>
+                <input type="radio" name="advance2" id="advance2-C" value="C" />
+                <label for="advance2-C">C)Writing</label>
             </div>
             
             <div>
-                <input type="radio" name="answerqs2" id="answerqs2-D" value="D" />
-                <label for="answerqs2-D">D)Write</label>
+                <input type="radio" name="advance2" id="advance2-D" value="D" />
+                <label for="advance2-D">D)Write</label>
             </div>
         
         </li>
@@ -73,23 +73,23 @@ if(isset($_POST['advance'])) {
             <h3>identify the correct sentence</h3>
             
             <div>
-                <input type="radio" name="answerqs3" id="answerqs3-A" value="A" />
-                <label for="answerqs3-A">A)Waiting, for the storm to stop; I was anxiously looking out of the window.</label>
+                <input type="radio" name="advance3" id="advance3-A" value="A" />
+                <label for="advance3-A">A)Waiting, for the storm to stop; I was anxiously looking out of the window.</label>
             </div>
             
             <div>
-                <input type="radio" name="answerqs3" id="answerqs3-B" value="B" />
-                <label for="answerqs3-B">B)Waiting for the storm to stop I was anxiously looking out of the window.</label>
+                <input type="radio" name="advance3" id="advance3-B" value="B" />
+                <label for="advance3-B">B)Waiting for the storm to stop I was anxiously looking out of the window.</label>
             </div>
             
             <div>
-                <input type="radio" name="answerqs3" id="answerqs3-C" value="C" />
-                <label for="answerqs3-C">C)Waiting for the storm to stop I was anxiously looking out of the window</label>
+                <input type="radio" name="advance3" id="advance3-C" value="C" />
+                <label for="advance3-C">C)Waiting for the storm to stop I was anxiously looking out of the window</label>
             </div>
             
             <div>
-                <input type="radio" name="answerqs3" id="answerqs3-D" value="D" />
-                <label for="answerqs3-D">D)Waiting for the storm to stop, I was anxiously looking out of the window.</label>
+                <input type="radio" name="advance3" id="advance3-D" value="D" />
+                <label for="advance3-D">D)Waiting for the storm to stop, I was anxiously looking out of the window.</label>
             </div>
         
         </li>
@@ -98,23 +98,23 @@ if(isset($_POST['advance'])) {
         
             <h3>What is 16+20?</h3>
             <div>
-                <input type="radio" name="answerqs4" id="answerqs4-A" value="A" />
-                <label for="answerqs4-A">A)30</label>
+                <input type="radio" name="advance4" id="advance4-A" value="A" />
+                <label for="advance4-A">A)36</label>
             </div>
             
             <div>
-                <input type="radio" name="answerqs4" id="answerqs4-B" value="B" />
-                <label for="answerqs4-B">B)26</label>
+                <input type="radio" name="advance4" id="advance4-B" value="B" />
+                <label for="advance4-B">B)26</label>
             </div>
 
             <div>
-                <input type="radio" name="answerqs4" id="answerqs4-B" value="B" />
-                <label for="answerqs4-B">C)36</label>
+                <input type="radio" name="advance4" id="advance4-B" value="B" />
+                <label for="advance4-B">C)30</label>
             </div>
 
             <div>
-                <input type="radio" name="answerqs4" id="answerqs4-B" value="B" />
-                <label for="answerqs4-B">D)16</label>
+                <input type="radio" name="advance4" id="advance4-B" value="B" />
+                <label for="advance4-B">D)16</label>
             </div>
         
         </li>
@@ -124,23 +124,23 @@ if(isset($_POST['advance'])) {
             <h3>Which part of body helps us to know the taste of candy?</h3>
             
             <div>
-                <input type="radio" name="answerqs5" id="answerqs5-A" value="A" />
-                <label for="answerqs5-A">Teeth</label>
+                <input type="radio" name="advance5" id="advance5-A" value="A" />
+                <label for="advance5-A">Teeth</label>
             </div>
             
             <div>
-                <input type="radio" name="answerqs5" id="answerqs5-B" value="B" />
-                <label for="answerqs5-B">B)Tongue</label>
+                <input type="radio" name="advance5" id="advance5-B" value="B" />
+                <label for="advance5-B">B)Tongue</label>
             </div>
             
             <div>
-                <input type="radio" name="answerqs5" id="answerqs5-C" value="C" />
-                <label for="answerqs5-C">C)Eyes</label>
+                <input type="radio" name="advance5" id="advance5-C" value="C" />
+                <label for="advance5-C">C)Eyes</label>
             </div>
             
             <div>
-                <input type="radio" name="answerqs5" id="answerqs5-D" value="D" />
-                <label for="answerqs5-D">D)Ears</label>
+                <input type="radio" name="advance5" id="advance5-D" value="D" />
+                <label for="advance5-D">D)Ears</label>
             </div>
         
         </li>
