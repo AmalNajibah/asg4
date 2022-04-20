@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 
 <?php
-if(isset($_POST['biginner'])) {
+if(isset($_POST['advance'])) {
     echo "<h1 class='quizbn'>Welcome to Quiz.bn ";
     echo $_POST['username'];
     echo "</h1>";
@@ -16,132 +16,131 @@ if(isset($_POST['biginner'])) {
 ?>
 
 <body class="questionbkgrd">
-<form action="biginnerresult.php" method="post" id="quiz">
+<form action="advanceresult.php" method="post" id="quiz">
 <h3 style="color:white;">2) Timer function here (mus)</h3>
     <ol>
         <li>
-            <h3>Can you guess which one is grape?</h3>
-            <div id="b">
-                <img id="b" src="img/grape.png" alt=""><br>
+            <h3>I am big, I have big ears. I have two long tisks. Who am I?</h3>
+            <div>
                 <input type="radio" name="answerqs1" id="answerqs1-A" value="A" />
-                <label for="answerqs1-A">A)  </label>
+                <label for="answerqs1-A">A)I am a cat</label>
             </div>
             
-            <div id="b">
-                <img id="b" src="img/strawberry.jpg" alt=""><br>
+            <div>
                 <input type="radio" name="answerqs1" id="answerqs1-B" value="B" />
-                <label for="answerqs1-B">B)</label>
+                <label for="answerqs1-B">B) I am a butterfly </label>
             </div>
             
-            <div id="b">
-            <img id="b" src="img/orange.png" alt=""><br>
+            <div>
                 <input type="radio" name="answerqs1" id="answerqs1-C" value="C" />
-                <label for="answerqs1-C">C)</label>
+                <label for="answerqs1-C">C)I am an elephant.</label>
             </div>
             
-            <div id="b">
-            <img id="b" src="img/banana.jpg" alt=""><br>
+            <div>
                 <input type="radio" name="answerqs1" id="answerqs1-D" value="D" />
-                <label for="answerqs1-D">D)</label>
+                <label for="answerqs1-D">D)I am an ant</label>
             </div>
         
         </li>
         
         <li>
-            <h3>How many colors in rainbow?</h3>
+            <h3>Fill in the blank. The studnts are _______ their notes.</h3>
             
             <div>
                 <input type="radio" name="answerqs2" id="answerqs2-A" value="A" />
-                <label for="answerqs2-A">A) 12</label>
+                <label for="answerqs2-A">A)Wrote</label>
             </div>
             
             <div>
                 <input type="radio" name="answerqs2" id="answerqs2-B" value="B" />
-                <label for="answerqs2-B">B) 10</label>
+                <label for="answerqs2-B">B)Writterb</label>
             </div>
             
             <div>
                 <input type="radio" name="answerqs2" id="answerqs2-C" value="C" />
-                <label for="answerqs2-C">C) 7</label>
+                <label for="answerqs2-C">C)Writing</label>
             </div>
             
             <div>
                 <input type="radio" name="answerqs2" id="answerqs2-D" value="D" />
-                <label for="answerqs2-D">D) 20</label>
+                <label for="answerqs2-D">D)Write</label>
             </div>
         
         </li>
         
         <li>
         
-            <h3>Tick the shape of square</h3>
+            <h3>identify the correct sentence</h3>
             
-            <div id="b">
-                <img id="b" src="img/star.jpg" alt=""><br>
+            <div>
                 <input type="radio" name="answerqs3" id="answerqs3-A" value="A" />
-                <label for="answerqs3-A">A)</label>
+                <label for="answerqs3-A">A)Waiting, for the storm to stop; I was anxiously looking out of the window.</label>
             </div>
             
-            <div id="b">
-                <img id="b" src="img/circle.jpg" alt=""><br>
+            <div>
                 <input type="radio" name="answerqs3" id="answerqs3-B" value="B" />
-                <label for="answerqs3-B">B)</label>
+                <label for="answerqs3-B">B)Waiting for the storm to stop I was anxiously looking out of the window.</label>
             </div>
             
-            <div id="b">
-                <img id="b" src="img/square.jpg" alt=""><br>
+            <div>
                 <input type="radio" name="answerqs3" id="answerqs3-C" value="C" />
-                <label for="answerqs3-C">C)</label>
+                <label for="answerqs3-C">C)Waiting for the storm to stop I was anxiously looking out of the window</label>
             </div>
             
-            <div id="b">
-                <img id="b" src="img/oval.jpg" alt=""><br>
+            <div>
                 <input type="radio" name="answerqs3" id="answerqs3-D" value="D" />
-                <label for="answerqs3-D">D) </label>
+                <label for="answerqs3-D">D)Waiting for the storm to stop, I was anxiously looking out of the window.</label>
             </div>
         
         </li>
         
         <li>
         
-            <h3>Select the longer pencil</h3>
-            
-            <div id="b">
-                <img id="b" src="img/small.png" alt=""><br>
+            <h3>What is 16+20?</h3>
+            <div>
                 <input type="radio" name="answerqs4" id="answerqs4-A" value="A" />
-                <label for="answerqs4-A">A)</label>
+                <label for="answerqs4-A">A)30</label>
             </div>
             
-            <div id="b">
-                <img id="b" src="img/long.jpg" alt=""><br>
+            <div>
                 <input type="radio" name="answerqs4" id="answerqs4-B" value="B" />
-                <label for="answerqs4-B">B)</label>
+                <label for="answerqs4-B">B)26</label>
+            </div>
+
+            <div>
+                <input type="radio" name="answerqs4" id="answerqs4-B" value="B" />
+                <label for="answerqs4-B">C)36</label>
+            </div>
+
+            <div>
+                <input type="radio" name="answerqs4" id="answerqs4-B" value="B" />
+                <label for="answerqs4-B">D)16</label>
             </div>
         
         </li>
         
         <li>
         
-            <h3>Fill in the missing number 23,___,___,26,___,</h3>
+            <h3>Which part of body helps us to know the taste of candy?</h3>
             
             <div>
                 <input type="radio" name="answerqs5" id="answerqs5-A" value="A" />
-                <label for="answerqs5-A">A)23,25,22,26,27</label>
+                <label for="answerqs5-A">Teeth</label>
             </div>
             
             <div>
                 <input type="radio" name="answerqs5" id="answerqs5-B" value="B" />
-                <label for="answerqs5-B">B)23,24,27,26,25</label>
+                <label for="answerqs5-B">B)Tongue</label>
             </div>
             
             <div>
                 <input type="radio" name="answerqs5" id="answerqs5-C" value="C" />
-                <label for="answerqs5-C">C)23,27,24,26,25</label>
+                <label for="answerqs5-C">C)Eyes</label>
             </div>
             
             <div>
                 <input type="radio" name="answerqs5" id="answerqs5-D" value="D" />
-                <label for="answerqs5-D">D)23,24,25,26,27</label>
+                <label for="answerqs5-D">D)Ears</label>
             </div>
         
         </li>
