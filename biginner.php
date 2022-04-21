@@ -11,7 +11,7 @@
         background-image: url('img/kits.jpg');
     }
 
-    button {
+    #subqsbtn {
    background-color: #09aeae;
    color: #FFF;
    border: 0;
@@ -31,17 +31,55 @@
 
 }
 
-button:hover {
+#subqsbtn:hover {
   background-color: #008CBA;
   color: white;
 }
+
+.music{
+    border-radius: 50%;
+    border: none;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.icon{
+    width: 100px;
+    height: auto;
+}
+
 </style>
 
 
 <body>
 <form action="biginnerresult.php" method="post" id="quiz">
 <h3 style="color:black;">1) Timer function here (mus)</h3><br><br>
-    <ol>
+
+<!-- For music -->
+<audio class="music" id="mymusic">
+  <source src="audio/music.mp3" type="audio/mpeg">
+</audio>
+<button onclick="playAudio()" type="button">Music on !
+<img class="icon" src="img/music.png" alt=""><br>
+</button>
+
+<script>
+    var x = document.getElementById("mymusic"); 
+
+    function playAudio() { 
+      x.play(); 
+    } 
+
+</script>
+
+
+<!-- 5 questions -->
+<ol>
         <li class="biginnerli">
             <h3>Can you guess which one is grape?</h3>
             <div id="b">

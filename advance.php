@@ -154,7 +154,7 @@ button:hover {
             
             <div>
                 <input type="radio" name="advance5" id="advance5-A" value="A" />
-                <label for="advance5-A">Teeth</label>
+                <label for="advance5-A">A)Teeth</label>
             </div>
             
             <div>
