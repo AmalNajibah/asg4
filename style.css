@@ -62,7 +62,7 @@ h1.quizbn{
   }
 
 
-.playagainbtn, .resetbtn {
+/* .playagainbtn, .resetbtn {
    display: inline-block;
    font-size: 12pt;
    margin-top: 30px;
@@ -74,7 +74,7 @@ h1.quizbn{
 
 .endbtn{
    color: red;
-}
+} */
 
 
 
