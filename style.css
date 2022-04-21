@@ -6,6 +6,12 @@ input, button {
    color: #333;
 }
 
+#error{
+   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+   font-size: 12pt;
+   color: red; 
+}
+
 .questionbkgrd{
    background-color: #046307;
 }
