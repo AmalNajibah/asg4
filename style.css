@@ -76,7 +76,10 @@ h1.quizbn{
 
 .playagainbtn{
    color: green;
-   
+}
+
+.endbtn{
+   color: red;
 }
 
 

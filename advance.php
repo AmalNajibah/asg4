@@ -48,7 +48,7 @@ button:hover {
 
 <body>
 <form action="advanceresult.php" method="post" id="quiz">
-<h3 style="color:white;">2) Timer function here (mus)</h3>
+<h3 style="color:black;">2) Timer function here (mus)</h3>
     <ol>
         <li class="advanceli">
             <h3>I am big, I have big ears. I have two long tisks. Who am I?</h3>

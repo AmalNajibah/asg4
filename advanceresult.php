@@ -51,8 +51,7 @@ body::after {
 </head>
 
 <h2>Scoreboard Top 5 goes here (mus)</h2><br><br>
-<a href="advance.php" class="playagainbtn">Play again</a><br><br>
-<!-- <a href="index.php" class="resetbtn">Reset</a><br><br> -->
-    
+<a href="advance.php" class="playagainbtn">Play again!</a><br><br>
+<a href="index.php" class="endbtn">End Game!</a><br><br> 
 </body>
 </html>
