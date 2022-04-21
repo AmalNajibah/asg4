@@ -11,7 +11,7 @@
 
 body{
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Amatica SC;
     display:flex; flex-direction:column; justify-content:center;
     min-height:100vh;
     padding: 0 16px;
@@ -27,7 +27,7 @@ body::after {
 .quizbn{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 10%;
-    background-color:pink;
+    background-color:yellow;
     height: 100px;
     max-weight:20px;
     vertical-align: middle;
