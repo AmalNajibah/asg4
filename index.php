@@ -77,10 +77,6 @@ button:hover {
   border: 2px solid #f21170;
 }
 
-
-
-
-
 .login h1, .login h2 {
    text-align: center;
 }
