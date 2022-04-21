@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
    
 <body>
+
+
 <h1 id='results'>Your Score: </h1>
 
 <?php
@@ -24,6 +26,9 @@
     if ($answer4 == "B") { $totalCorrect++; }
     if ($answer5 == "D") { $totalCorrect++; }
     
+    if ($totalCorrect <2){
+        echo "<div id='error'> You failed! <br> Try again!</div>";
+    }
     echo "<div id='results'>$totalCorrect / 5 correct</div>";
 
 ?>
@@ -31,6 +36,8 @@
 <h2>Scoreboard Top 5 goes here (mus)</h2><br><br>
 <a href="biginner.php" class="playagainbtn">Play again</a><br><br>
 <a href="index.php" class="resetbtn">Reset</a><br><br>
-</head>    
+
+
+    
 </body>
 </html>

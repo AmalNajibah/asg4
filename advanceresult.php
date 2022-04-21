@@ -23,6 +23,10 @@
     if ($answer3 == "D") { $totalCorrect++; }
     if ($answer4 == "A") { $totalCorrect++; }
     if ($answer5 == "B") { $totalCorrect++; }
+
+    if ($totalCorrect <2){
+        echo "<div id='error'> You failed! <br> Try again!</div>";
+    }
     
     echo "<div id='results'>$totalCorrect / 5 correct</div>";
     
