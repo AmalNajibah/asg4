@@ -13,7 +13,7 @@
 
     #subqsbtn {
    background-color: #09aeae;
-   color: #FFF;
+   color: white;
    border: 0;
    border-radius: 10px;
    padding: 1em 2em;
@@ -36,37 +36,61 @@
   color: white;
 }
 
-.music{
-    border-radius: 50%;
-    border: none;
-  padding: 20px;
+
+.musicplay{
+  display:flex;
+  justify-content: flex-end;
+}
+
+.musicbtn {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.icon{
-    width: 100px;
-    height: auto;
+.musicbtn:hover {
+  background-color: #fff;
 }
 
+.musicbtn:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .musicbtn {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
 </style>
 
 
 <body>
 <form action="biginnerresult.php" method="post" id="quiz">
-<h3 style="color:black;">1) Timer function here (mus)</h3><br><br>
+<h3 class="timer" style="color:black;">1) Timer function here (mus)</h3><br><br>
 
 <!-- For music -->
+<div class="musicplay">
 <audio class="music" id="mymusic">
   <source src="audio/music.mp3" type="audio/mpeg">
 </audio>
-<button onclick="playAudio()" type="button">Music on !
-<img class="icon" src="img/music.png" alt=""><br>
-</button>
+<button class="musicbtn" onclick="playAudio()" type="button">Music on !</button><br><br>
+<button class="musicbtn" onclick="pauseAudio()" type="button">Pause music ! </button>
+</div>
 
 <script>
     var x = document.getElementById("mymusic"); 
@@ -75,7 +99,10 @@
       x.play(); 
     } 
 
-</script>
+    function pauseAudio() { 
+     x.pause(); 
+    }
+</script><br><br>
 
 
 <!-- 5 questions -->

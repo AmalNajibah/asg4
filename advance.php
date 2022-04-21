@@ -18,7 +18,7 @@ body{
  }
 
  
- button {
+ #subqsbtn {
    background-color: #09aeae;
    color: #FFF;
    border: 0;
@@ -38,15 +38,78 @@ body{
 
 }
 
-button:hover {
+#subqsbtn:hover {
   background-color: #008CBA;
   color: white;
+}
+
+.musicplay{
+  display:flex;
+  justify-content: flex-end;
+}
+
+.musicbtn {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.musicbtn:hover {
+  background-color: #fff;
+}
+
+.musicbtn:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .musicbtn {
+    min-width: 120px;
+    padding: 0 25px;
+  }
 }
 </style>
 
 <body>
 <form action="advanceresult.php" method="post" id="quiz">
 <h3 style="color:black;">2) Timer function here (mus)</h3>
+
+<!-- For music -->
+<div class="musicplay">
+<audio class="music" id="mymusic">
+  <source src="audio/music.mp3" type="audio/mpeg">
+</audio>
+<button class="musicbtn" onclick="playAudio()" type="button">Music on !</button><br><br>
+<button class="musicbtn" onclick="pauseAudio()" type="button">Pause music ! </button>
+</div>
+
+<script>
+    var x = document.getElementById("mymusic"); 
+
+    function playAudio() { 
+      x.play(); 
+    } 
+
+    function pauseAudio() { 
+     x.pause(); 
+    }
+</script><br><br>
+
+
     <ol>
         <li class="advanceli">
             <h3>I am big, I have big ears. I have two long tisks. Who am I?</h3>
