@@ -17,30 +17,59 @@ body{
    border-radius: 25px;
  }
 
- 
- #subqsbtn {
-   background-color: #09aeae;
-   color: #FFF;
-   border: 0;
-   border-radius: 10px;
-   padding: 1em 2em;
-   cursor: pointer;
-   font-family: 'Roboto', Arial, Helvetica, sans-serif;
-   font-size: 12pt;
-   color: black;
-   text-align: center;
-   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
 
+/* for submit button css */
+.out{
+  position:relative;
+  height:80px;
+  width:100%;
+}
+.container{
+  position:absolute;
+  bottom:0;
+  right:0;
+  left:0;
+  text-align:center;
+}
+
+#subqsbtn {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
 #subqsbtn:hover {
-  background-color: #008CBA;
-  color: white;
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+#subqsbtn:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
 
 .musicplay{
@@ -239,8 +268,11 @@ body{
     
     </ol>
     
+<div class="out">
+<div class="container">
     <button id="subqsbtn" type="submit" value="Submit">Submit answer</button><br><br>
-
+</div>
+</div>
 </form>
 
 

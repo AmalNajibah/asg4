@@ -62,13 +62,6 @@ h1.quizbn{
   }
 
 
-#subqsbtn{
-   background-color: whte;
-   color: #FFF;
-   text-align:center;
-
-}
-
 .playagainbtn, .resetbtn {
    display: inline-block;
    font-size: 12pt;
