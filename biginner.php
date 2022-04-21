@@ -150,32 +150,6 @@ if(isset($_POST['biginner'])) {
     
     <button id="subqsbtn" type="submit" value="Submit" class="submitbtn" name="submit">Submit answer</button><br><br>
 
-    <?php
-    $answer1 = $_POST['answerqs1'];
-    $answer2 = $_POST['answerqs2'];
-    $answer3 = $_POST['answerqs3'];
-    $answer4 = $_POST['answerqs4'];
-    $answer5 = $_POST['answerqs5'];
-
-    $totalCorrect = 0;
-    
-    if ($answer1 == "A") { $totalCorrect++; }
-    if ($answer2 == "C") { $totalCorrect++; }
-    if ($answer3 == "C") { $totalCorrect++; }
-    if ($answer4 == "B") { $totalCorrect++; }
-    if ($answer5 == "D") { $totalCorrect++; }
-    
-    if(isset($_POST['submit'])){
-        if( $totalCorrect <= 2){
-            header("Location: gameover.php");
-            exit();
-        }else{
-            header("Location: biginnerresult.php");
-            exit();
-        }
-    }
-    ?>
-
 </form>
 
 
