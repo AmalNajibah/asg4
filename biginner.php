@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 
 <?php
-if(isset($_POST['biginner'])) {
+if(isset($_POST['beginner'])) {
     echo "<h1 class='quizbn'>Welcome to Quiz.bn ";
     echo $_POST['username'];
     echo "</h1>";

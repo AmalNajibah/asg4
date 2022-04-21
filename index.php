@@ -106,7 +106,7 @@ input[type=text] {
 
 <body class="bkgrdindex">
 
-<form class="background" action="biginner.php, advance.php" method="post">
+<form class="background" action="biginner.php" method="post">
 <div class="login">
         <h1>Start playing Quiz.bn!</h1>
         <h2>Please fill in your names</h2><br><br>
