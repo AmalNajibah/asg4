@@ -25,13 +25,12 @@
     if ($answer5 == "D") { $totalCorrect++; }
     
     echo "<div id='results'>$totalCorrect / 5 correct</div>";
-    
+
 ?>
-</head>
 
 <h2>Scoreboard Top 5 goes here (mus)</h2><br><br>
 <a href="biginner.php" class="playagainbtn">Play again</a><br><br>
 <a href="index.php" class="resetbtn">Reset</a><br><br>
-    
+</head>    
 </body>
 </html>
