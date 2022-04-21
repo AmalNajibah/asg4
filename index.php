@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
     <title>Login</title>
 </head>
 
@@ -31,57 +30,56 @@ body::after {
 }
     
 .bkgrdindex, input, button {
-
    font-size: 12pt;
    color: #333;
    text-align: center;
 }
 
+/* submit button CSS */
 button {
-   background-color: #09aeae;
-   color: #FFF;
-   border: 0;
-   border-radius: 10px;
-   padding: 1em 2em;
-   cursor: pointer;
-}
-
-button[disabled] {
-   cursor: not-allowed;
-   opacity: .5;
-}
-
-//hover
-button {
-  overflow: hidden;
-  transition: all 300ms ease;
-}
-
-/* button h4 {
-  color: #111;
-} */
-
-button:after {
-  width: 300%;
-  height: 300%;
-  left: -300%;
-  transform: rotate(45deg);
-  background-color: #f21170;
-  transition: all 300ms ease;
-}
-
-button:hover {
+  background-color: #110448;
+  border: 0;
+  border-radius: 56px;
   color: #fff;
-  z-index: 10;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
   font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-button:hover::after {
-  left: -100%;
+button:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
 }
 
 button:hover {
-  border: 2px solid #f21170;
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: 16px 48px;
+  }
 }
 
 .login h1, .login h2 {
