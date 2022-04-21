@@ -106,7 +106,7 @@ input[type=text] {
 
 <body class="bkgrdindex">
 
-<form class="background" action="biginner.php" method="post">
+<form class="background" action="biginner.php, advance.php" method="post">
 <div class="login">
         <h1>Start playing Quiz.bn!</h1>
         <h2>Please fill in your names</h2><br><br>
@@ -116,7 +116,7 @@ input[type=text] {
             <input type="text" id="username" name="username" required />
         </div><br><br>
 
-        <button type="submit" value="Submit" name="biginner">Beginner</button>
+        <button type="submit" value="Submit" name="beginner">Biginner</button>
         <button type="submit" value="Submit" name="advance">Advance</button>
     </div>
 </form>
