@@ -119,8 +119,7 @@ input[type=text] {
             <input type="text" id="username" name="username" required />
         </div><br><br>
 
-        <button type="submit" value="Submit" name="beginner">Biginner</button>
-        <button type="submit" value="Submit" name="advance">Advance</button>
+        <button type="submit" value="Submit" name="beginner">STARY NOW!</button>
     </div>
 </form>
 </body>

@@ -44,8 +44,6 @@ button:hover {
 }
 </style>
 
-
-
 <body>
 <form action="advanceresult.php" method="post" id="quiz">
 <h3 style="color:black;">2) Timer function here (mus)</h3>
