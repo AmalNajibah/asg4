@@ -31,7 +31,7 @@ body::after {
 }
     
 .bkgrdindex, input, button {
-   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+
    font-size: 12pt;
    color: #333;
    text-align: center;

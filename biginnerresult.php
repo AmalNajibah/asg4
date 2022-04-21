@@ -8,8 +8,19 @@
    
     <style>
     body{
-        background-image: url('img/kits.jpg');
-    }
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex; flex-direction:column; justify-content:center;
+    min-height:100vh;
+    padding: 0 16px;
+    background-image: url('img/kids.jpg');
+}
+
+body::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
     
 
