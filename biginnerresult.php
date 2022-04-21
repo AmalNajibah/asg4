@@ -47,7 +47,7 @@ body::after {
     if ($answer5 == "D") { $totalCorrect++; }
     
     if ($totalCorrect <2){
-        echo "<div id='error'> You failed! <br> Try again!</div>";
+        echo "<div id='error'> Game Over!</div><br><br>";
     }
     echo "<div id='results'>$totalCorrect / 5 correct</div>";
 
