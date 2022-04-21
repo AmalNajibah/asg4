@@ -45,14 +45,6 @@ button:hover {
 </style>
 
 
-<?php
-if(isset($_POST['advance'])) {
-    echo "<h1 class='quizbn'>Welcome to Quiz.bn ";
-    echo $_POST['username'];
-    echo "</h1>";
-    echo "<h3 style='color:white'>1) untuk mysql rahmah, sini tu kali..kalau ya login ya save ke db</h3>";
-    }
-?>
 
 <body>
 <form action="advanceresult.php" method="post" id="quiz">
