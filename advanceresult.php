@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=<div id="page-wrap">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play" />
-
+    <link href="http://fonts.cdnfonts.com/css/games" rel="stylesheet">
+    
     <style>
    body{
     text-align: center;

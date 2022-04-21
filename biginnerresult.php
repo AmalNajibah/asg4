@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=<div id="page-wrap">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play" />
-
+    <link href="http://fonts.cdnfonts.com/css/games" rel="stylesheet">
+                
     <style>
     body{
     text-align: center;
@@ -118,13 +119,11 @@ body::after {
     font-weight: 700;
     line-height: 15.4px;
 }
-
 </style>
 
 <body>
 
 
-<h1 id='results'>Your Score: </h1>
 
 <?php
     $answer1 = $_POST['answerqs1'];
@@ -144,17 +143,22 @@ body::after {
     if ($totalCorrect <2){
         echo "<div id='error'> Game Over!</div><br><br>";
     }
-    echo "<div id='results'>$totalCorrect / 5 correct</div>";
+    echo "<div id='results' class='outer'> You Score $totalCorrect / 5 correct</div>";
 
 ?>
+
+
 
 <h2>Scoreboard Top 5 goes here (mus)</h2><br><br>
 <a href="biginner.php" class="playagainbtn">Play again!</a><br><br>
 <a href="index.php" class="endbtn">End game!</a><br><br>
-
-
     
 </body>
 </html>
 
-<!-- refrence: https://www.cssfontstack.com/Play -->
+<!--refrence:
+  https://www.cssfontstack.com/Play
+  https://www.cdnfonts.com/games.font
+
+
+-->

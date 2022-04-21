@@ -32,8 +32,6 @@ body::after {
     max-weight:20px;
     vertical-align: middle;
     line-height: 90px;
-
-
 }
 
 /* CSS */

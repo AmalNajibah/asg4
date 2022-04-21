@@ -7,9 +7,11 @@ input {
    color: #333;
 }
 a:link { text-decoration: none; }
+
 #error{
-   font-family: 'Roboto', Arial, Helvetica, sans-serif;
-   font-size: 16pt;
+   @import url('http://fonts.cdnfonts.com/css/games');
+   font-family: 'Games', sans-serif;
+   font-size: 80px;
    color: red; 
 }
 
@@ -42,6 +44,7 @@ h1.quizbn{
 
 #results {
     font: 44px Georgia, Serif;
+    vertical-align: middle;
 }
 
 #b {
@@ -51,7 +54,6 @@ h1.quizbn{
     height: 100px;
     padding: 1px;
     border: 12px black;    
-    /* background-color: yellow;  */
   }
 
   .biginnerli{
@@ -61,20 +63,6 @@ h1.quizbn{
     border-radius: 25px;
   }
 
-
-/* .playagainbtn, .resetbtn {
-   display: inline-block;
-   font-size: 12pt;
-   margin-top: 30px;
-}
-
-.playagainbtn{
-   color: green;
-}
-
-.endbtn{
-   color: red;
-} */
 
 
 
