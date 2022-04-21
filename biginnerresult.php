@@ -142,7 +142,10 @@ body::after {
     
     if ($totalCorrect <2){
         echo "<div id='error'> Game Over!</div><br><br>";
+    }else{
+      echo "<div id='pass'> You Passed!</div><br><br>";
     }
+    
     echo "<div id='results' class='outer'> You Score $totalCorrect / 5 correct</div>";
 
 ?>
