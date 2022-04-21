@@ -8,7 +8,7 @@
 <style>
 
 body{
-    background-color: #046307;
+    background-image: url('img/kits.jpg');
 }
 .advanceli{
    background: yellow; 
@@ -42,9 +42,6 @@ button:hover {
   background-color: #008CBA;
   color: white;
 }
-
-
-
 </style>
 
 

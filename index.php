@@ -12,14 +12,21 @@
 body, html {
   height: 100%;
   margin: 0;
+  background-image: url('img/kids.jpg');
+}
+
+body::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .bkgrdindex{
-    background-image: url('img/index1.jpg');
-    background-repeat:no-repeat;
-    background-size:cover;
-    /* border: 5px solid white; */
-    height:100%
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex; flex-direction:column; justify-content:center;
+    min-height:100vh;
+    padding: 0 16px;
 
 }
     
@@ -102,7 +109,7 @@ input[type=text] {
 
 <body class="bkgrdindex">
 
-<form class="background" action="biginner.php" method="post">
+<form class="background" action="level.php" method="post">
 <div class="login">
         <h1>Start playing Quiz.bn!</h1>
         <h2>Please fill in your names</h2><br><br>
@@ -116,7 +123,5 @@ input[type=text] {
         <button type="submit" value="Submit" name="advance">Advance</button>
     </div>
 </form>
-
-    
 </body>
 </html>

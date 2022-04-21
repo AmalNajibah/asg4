@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=<div id="page-wrap">
     <link rel="stylesheet" type="text/css" href="style.css" />
    
+    <style>
+    body{
+        background-image: url('img/kits.jpg');
+    }
+
+    
+
+</style>
+
 <body>
 
 

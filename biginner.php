@@ -6,18 +6,41 @@
     <meta name="viewport" content="width=<div id="page-wrap">
     <link rel="stylesheet" type="text/css" href="style.css" />
 
-<?php
-if(isset($_POST['beginner'])) {
-    echo "<h1 class='quizbn'>Welcome to Quiz.bn ";
-    echo $_POST['username'];
-    echo "</h1>";
-    echo "<h3 style='color:white'>1) untuk mysql rahmah, sini tu kali..kalau ya login ya save ke db</h3>";
+<style>
+    body{
+        background-image: url('img/kits.jpg');
     }
-?>
 
-<body class="questionbkgrd">
+    button {
+   background-color: #09aeae;
+   color: #FFF;
+   border: 0;
+   border-radius: 10px;
+   padding: 1em 2em;
+   cursor: pointer;
+   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+   font-size: 12pt;
+   color: black;
+   text-align: center;
+   text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+}
+
+button:hover {
+  background-color: #008CBA;
+  color: white;
+}
+</style>
+
+
+<body>
 <form action="biginnerresult.php" method="post" id="quiz">
-<h3 style="color:white;">2) Timer function here (mus)</h3>
+<h3 style="color:black;">1) Timer function here (mus)</h3><br><br>
     <ol>
         <li class="biginnerli">
             <h3>Can you guess which one is grape?</h3>
