@@ -24,7 +24,7 @@ body::after {
   display: table;
 }
 
-.level{
+.quizbn{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 10%;
     background-color:pink;
@@ -36,17 +36,8 @@ body::after {
 
 }
 
-/* a,button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration: none;
-    color: black;
-    background-color: yellow;
-} */
-
 /* CSS */
-a,button {
+.btn {
   appearance: none;
   background-color: #FFFFFF;
   border-radius: 40em;
@@ -72,18 +63,18 @@ a,button {
   touch-action: manipulation;
 }
 
-button:hover {
+.btn:hover {
   background-color: #FFC229;
   box-shadow: #FF6314 0 -6px 8px inset;
   transform: scale(1.125);
 }
 
-button:active {
+.btn:active {
   transform: scale(1.025);
 }
 
 @media (min-width: 768px) {
-  button {
+  .btn {
     font-size: 1.5rem;
     padding: .75rem 2rem;
   }
@@ -102,14 +93,8 @@ if(isset($_POST['beginner'])) {
 <body>
 <h1 class="level">Choose your level</h1>
 <form class="background" action="biginner.php" method="post">
-
-<button>
-    <a href="biginner.php" type="submit" value="beginner" name="beginner" class="beginner">Beginner</a>
-</button>
-
-<button>
-    <a href="advance.php" type="submit" value="advance" name="advance" class="advance">Advance</a>
-</button>
+    <a href="biginner.php" type="submit" value="beginner" name="beginner" class="btn">Beginner</a>
+    <a href="advance.php" type="submit" value="advance" name="advance" class="btn">Advance</a>
 </form>
 </body>
 </html>
