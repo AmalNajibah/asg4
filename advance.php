@@ -115,7 +115,6 @@ body{
 
 <body>
 <form action="advanceresult.php" method="post" id="quiz">
-<h3 style="color:black;">2) Timer function here (mus)</h3>
 
 <!-- For music -->
 <div class="musicplay">
@@ -126,6 +125,46 @@ body{
 <button class="musicbtn" onclick="pauseAudio()" type="button">Pause music ! </button>
 </div>
 
+<!-- timer -->
+<div class="btnGroup">Timer
+        <span class="Btn" id="verifiBtn">
+        </span>
+        <span class="timer">
+          <span id="counter"></span>
+        </span>
+      </div>
+
+<!-- for countdown 1 min -->
+<script>
+    function countdown() {
+        var seconds = 59;
+        function tick() {
+          var counter = document.getElementById("counter");
+          seconds--;
+          counter.innerHTML =
+            "0:" + (seconds < 10 ? "0" : "") + String(seconds);
+          if (seconds > 0) {
+            setTimeout(tick, 1000);
+          } else {
+            window.location.replace("biginnerresult.php");
+          }
+        }
+        tick();
+      }
+      countdown();
+</script>
+
+<script>
+    var x = document.getElementById("mymusic"); 
+
+    function playAudio() { 
+      x.play(); 
+    } 
+
+    function pauseAudio() { 
+     x.pause(); 
+    }
+</script><br><br>
 <script>
     var x = document.getElementById("mymusic"); 
 
@@ -265,6 +304,133 @@ body{
             </div>
         
         </li><br>
+
+        <li class="advanceli">
+        <h3>Which is the largest planet in our solar systems?</h3>
+            
+            <div>
+                <input type="radio" name="advance6" id="advance6-A" value="A" />
+                <label for="advance6-A">A)Jupiter</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="advance6" id="advance6-B" value="B" />
+                <label for="advance6-B">B)Mars</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="advance6" id="advance6-C" value="C" />
+                <label for="advance6-C">C)Earth</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="advance6" id="advance6-D" value="D" />
+                <label for="advance6-D">D)Saturn</label>
+            </div>
+        
+        </li><br>
+
+        <li class="advanceli">
+        <h3>Which are the vowels in the English alphabet series?</h3>
+            
+            <div>
+                <input type="radio" name="advance7" id="advance7-A" value="A" />
+                <label for="advance7-A">A)A, B, C, D</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="advance7" id="advance7-B" value="B" />
+                <label for="advance7-B">B)A, E, I, O, U</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="advance7" id="advance7-C" value="C" />
+                <label for="advance7-C">C)A, C, B, D</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="advance7" id="advance7-D" value="D" />
+                <label for="advance7-D">D)A, D, B, C</label>
+            </div>
+        
+        </li><br>
+
+        <li class="advanceli">
+        <h3>Which month of the year have the least number of days?</h3>
+            
+            <div>
+                <input type="radio" name="advance8" id="advance8-A" value="A" />
+                <label for="advance8-A">A)April</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="advance8" id="advance8-B" value="B" />
+                <label for="advance8-B">B)Januray</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="advance8" id="advance8-C" value="C" />
+                <label for="advance8-C">C)February</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="advance8" id="advance8-D" value="D" />
+                <label for="advance8-D">D)December</label>
+            </div>
+        
+        </li><br>
+
+        <li class="advanceli">
+        
+            <h3>How many primary colors are there?</h3>
+            
+            <div>
+                <input type="radio" name="advance9" id="advance9-A" value="A" />
+                <label for="advance9-A">A) 3 (red,yellow,blue) </label>
+            </div>
+            
+            <div>
+                <input type="radio" name="advance9" id="advance9-B" value="B" />
+                <label for="advance9-B">B) 2 (red, gree)</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="advance9" id="advance9-C" value="C" />
+                <label for="advance9-C">C) 6 (Red, orange, yellow, green, blue, purple</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="advance9" id="advance9-D" value="D" />
+                <label for="advance9-D">D) 1(red)</label>
+            </div>
+        
+        </li><br><br>
+
+        <li class="advanceli">
+        
+            <h3>In which direction does the sunrise?</h3>
+            
+            <div>
+                <input type="radio" name="advance10" id="advance10-A" value="A" />
+                <label for="advance10-A">A)North</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="advance10" id="advance10-B" value="B" />
+                <label for="advance10-B">B)West</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="advance10" id="advance10-C" value="C" />
+                <label for="advance10-C">C)south</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="advance10" id="advance10-D" value="D" />
+                <label for="advance10-D">D)East</label>
+            </div>
+        
+        </li><br><br>
     
     </ol>
     
@@ -274,11 +440,6 @@ body{
 </div>
 </div>
 </form>
-
-
-
-
-
 </body>
 </html>
 
@@ -287,5 +448,5 @@ body{
     https://code-projects.org/online-quiz-system-in-php-with-source-code/
     https://t4tutorials.com/source-code-of-online-quiz-in-php/?amp
     https://www.sourcecodester.com/php/14487/simple-realtime-quiz-system-using-phpmysql-source-code.html
-
+    https://codepen.io/masudrana2779/details/GRqzPdZ
 -->

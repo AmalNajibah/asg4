@@ -119,6 +119,18 @@ body::after {
     font-weight: 700;
     line-height: 15.4px;
 }
+
+table, td{
+  border: 1px solid;
+  border-collapse:collapse;
+  margin:20px;
+    font-family: Play;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 15.4px;
+}
 </style>
 
 <body>
@@ -131,6 +143,11 @@ body::after {
     $answer3 = $_POST['answerqs3'];
     $answer4 = $_POST['answerqs4'];
     $answer5 = $_POST['answerqs5'];
+    $answer6 = $_POST['answerqs6'];
+    $answer7 = $_POST['answerqs7'];
+    $answer8 = $_POST['answerqs8'];
+    $answer9 = $_POST['answerqs9'];
+    $answer10 = $_POST['answerqs10'];
 
     $totalCorrect = 0;
     
@@ -139,20 +156,104 @@ body::after {
     if ($answer3 == "C") { $totalCorrect++; }
     if ($answer4 == "B") { $totalCorrect++; }
     if ($answer5 == "D") { $totalCorrect++; }
+    if ($answer6 == "B") { $totalCorrect++; }
+    if ($answer7 == "D") { $totalCorrect++; }
+    if ($answer8 == "A") { $totalCorrect++; }
+    if ($answer9 == "B") { $totalCorrect++; }
+    if ($answer10 == "C") { $totalCorrect++; }
     
-    if ($totalCorrect <2){
+    if ($totalCorrect <5){
         echo "<div id='error'> Game Over!</div><br><br>";
     }else{
       echo "<div id='pass'> You Passed!</div><br><br>";
     }
     
-    echo "<div id='results' class='outer'> You Score $totalCorrect / 5 correct</div>";
+    echo "<div id='results' class='outer'> You Score $totalCorrect / 10 correct</div>";
 
 ?>
 
 
 
-<h2>Scoreboard Top 5 goes here (mus)</h2><br><br>
+<h2>Scoreboard Top 5</h2>
+       
+            
+<?php
+  
+/* Connection Variable ("Servername",
+"username","password","database") */
+// $con = mysqli_connect("localhost", 
+//         "root", "", "leaderboard");
+
+  
+/* Mysqli query to fetch rows 
+in descending order of marks */
+// $result = mysqli_query($con, "SELECT userName, 
+// marks FROM leaderboard ORDER BY marks DESC");
+
+  
+/* First rank will be 1 and 
+    second be 2 and so on */
+$ranking = 1;
+  
+/* Fetch Rows from the SQL query */
+// if (mysqli_num_rows($result)) {
+//     while ($row = mysqli_fetch_array($result)) {
+//         echo "<td>{$ranking}</td>
+//         <td>{$row['userName']}</td>
+//         <td>{$row['marks']}</td>";
+//         $ranking++;
+//     }
+// }
+
+//create connection
+$conn = new mysqli('localhost', 'root', '', 'quizbn');
+if(mysqli_connect_error()){
+  die('Connect error ('. mysqli_connect_errno().') '. mysqli_connect_error());
+}
+
+
+//insert score
+$sql = "INSERT INTO score, ranking (`score`,`ranking`) VALUES (`$totalCorrect`)";
+
+              $result = mysqli_query($conn, $sql);
+              if($result){
+                  echo 'Your Score Have Been Added';
+              }else{
+                  echo 'Cannot add your score';
+              }
+
+
+//get the username
+$result = mysqli_query($conn, "SELECT * FROM user");
+if (mysqli_num_rows($result) > 0){
+  ?>
+
+  <table>
+    <tr>
+      <td>username</td>
+      <td>score</td>
+      <td>ranking</td>
+</tr>
+      <?php
+      $i = 0;
+      while($row = mysqli_fetch_array($result)){
+        ?>
+        <tr>
+        <td><?php echo $row["username"]; ?></td>
+        <td><?php echo $row["$ranking"]; ?></td>
+        <td><?php echo $row["$totalCorrect"]; ?></td>
+        
+      </tr>
+      <?php
+
+      }
+}
+
+
+?>
+
+</table>
+<br>
 <a href="biginner.php" class="playagainbtn">Play again!</a><br><br>
 <a href="index.php" class="endbtn">End game!</a><br><br>
     

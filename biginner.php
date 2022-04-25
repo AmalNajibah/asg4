@@ -111,7 +111,6 @@
 
 <body>
 <form action="biginnerresult.php" method="post" id="quiz">
-<h3 class="timer" style="color:black;">1) Timer function here (mus)</h3><br><br>
 
 <!-- For music -->
 <div class="musicplay">
@@ -121,6 +120,35 @@
 <button class="musicbtn" onclick="playAudio()" type="button">Music on !</button><br><br>
 <button class="musicbtn" onclick="pauseAudio()" type="button">Pause music ! </button>
 </div>
+
+<!-- timer -->
+<div class="btnGroup">Timer
+        <span class="Btn" id="verifiBtn">
+        </span>
+        <span class="timer">
+          <span id="counter"></span>
+        </span>
+      </div>
+
+<!-- for countdown 1 min -->
+<script>
+    function countdown() {
+        var seconds = 59;
+        function tick() {
+          var counter = document.getElementById("counter");
+          seconds--;
+          counter.innerHTML =
+            "0:" + (seconds < 10 ? "0" : "") + String(seconds);
+          if (seconds > 0) {
+            setTimeout(tick, 1000);
+          } else {
+            window.location.replace("biginnerresult.php");
+          }
+        }
+        tick();
+      }
+      countdown();
+</script>
 
 <script>
     var x = document.getElementById("mymusic"); 
@@ -133,7 +161,6 @@
      x.pause(); 
     }
 </script><br><br>
-
 
 <!-- 5 questions -->
 <ol>
@@ -263,6 +290,136 @@
             </div>
         
         </li><br>
+
+
+        <li class="biginnerli">
+        
+            <h3>What is 1+1</h3>
+            
+            <div>
+                <input type="radio" name="answerqs6" id="answerqs6-A" value="A" />
+                <label for="answerqs6-A">A)4</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="answerqs6" id="answerqs6-B" value="B" />
+                <label for="answerqs6-B">B)2</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="answerqs6" id="answerqs6-C" value="C" />
+                <label for="answerqs6-C">C)6</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="answerqs6" id="answerqs6-D" value="D" />
+                <label for="answerqs6-D">D)10</label>
+            </div>
+        
+        </li><br>
+
+        <li class="biginnerli">
+        
+            <h3>What is baby frog known as?</h3>
+            
+            <div>
+                <input type="radio" name="answerqs7" id="answerqs7-A" value="A" />
+                <label for="answerqs7-A">A) Kitten</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="answerqs7" id="answerqs7-B" value="B" />
+                <label for="answerqs7-B">B) Puppy</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="answerqs7" id="answerqs7-C" value="C" />
+                <label for="answerqs7-C">C) rabbit</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="answerqs7" id="answerqs7-D" value="D" />
+                <label for="answerqs7-D">D) Tadpole</label>
+            </div>
+        </li><br>
+
+        <li class="biginnerli">
+        
+            <h3>Which day comes after saturday</h3>
+            
+            <div>
+                <input type="radio" name="answerqs8" id="answerqs8-A" value="A" />
+                <label for="answerqs8-A">A)Sunday</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="answerqs8" id="answerqs8-B" value="B" />
+                <label for="answerqs8-B">B)Monday</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="answerqs8" id="answerqs8-C" value="C" />
+                <label for="answerqs8-C">C)Tuesday</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="answerqs8" id="answerqs8-D" value="D" />
+                <label for="answerqs8-D">D)Friday</label>
+            </div>
+        
+        </li><br>
+
+        <li class="biginnerli">
+        
+            <h3>How many hours do we have in a day?</h3>
+            
+            <div>
+                <input type="radio" name="answerqs9" id="answerqs9-A" value="A" />
+                <label for="answerqs9-A">A) 36 hourd</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="answerqs9" id="answerqs9-B" value="B" />
+                <label for="answerqs9-B">B) 24 hours</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="answerqs9" id="answerqs9-C" value="C" />
+                <label for="answerqs9-C">C) 10 hours</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="answerqs9" id="answerqs9-D" value="D" />
+                <label for="answerqs9-D">D) 12 hours</label>
+            </div>
+        
+        </li><br>
+
+        <li class="biginnerli">
+        
+            <h3>How many days do we have in a week?</h3>
+            
+            <div>
+                <input type="radio" name="answerqs10" id="answerqs10-A" value="A" />
+                <label for="answerqs10-A">A)4</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="answerqs10" id="answerqs10-B" value="B" />
+                <label for="answerqs10-B">B)2</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="answerqs10" id="answerqs10-C" value="C" />
+                <label for="answerqs10-C">C)7</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="answerqs10" id="answerqs10-D" value="D" />
+                <label for="answerqs10-D">D)10</label>
+            </div>
+        
+        </li><br>
     
     </ol>
     
@@ -273,7 +430,6 @@
 </div>
 
 </form>
-
 
 
 

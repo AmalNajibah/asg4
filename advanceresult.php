@@ -131,6 +131,11 @@ body::after {
     $answer3 = $_POST['advance3'];
     $answer4 = $_POST['advance4'];
     $answer5 = $_POST['advance5'];
+    $answer6 = $_POST['advance6'];
+    $answer7 = $_POST['advance7'];
+    $answer8 = $_POST['advance8'];
+    $answer9 = $_POST['advance9'];
+    $answer10 = $_POST['advance10'];
 
     $totalCorrect = 0;
     
@@ -139,14 +144,19 @@ body::after {
     if ($answer3 == "D") { $totalCorrect++; }
     if ($answer4 == "A") { $totalCorrect++; }
     if ($answer5 == "B") { $totalCorrect++; }
+    if ($answer6 == "A") { $totalCorrect++; }
+    if ($answer7 == "B") { $totalCorrect++; }
+    if ($answer8 == "C") { $totalCorrect++; }
+    if ($answer9 == "A") { $totalCorrect++; }
+    if ($answer10 == "D") { $totalCorrect++; }
 
-    if ($totalCorrect <2){
+    if ($totalCorrect <5){
         echo "<div id='error'> Game Over!</div><br><br>";
     }else{
       echo "<div id='pass'> You Passed!</div><br><br>";
     }
     
-    echo "<div id='results'>$totalCorrect / 5 correct</div>";
+    echo "<div id='results'>$totalCorrect / 10 correct</div>";
     
 ?>
 </head>

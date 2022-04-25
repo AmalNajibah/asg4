@@ -84,15 +84,46 @@ if(isset($_POST['beginner'])) {
     echo "<h1 class='quizbn'>Welcome to Quiz.bn ";
     echo $_POST['username'];
     echo "</h1>";
-    echo "<h3 style='color:black'>1) untuk mysql rahmah, sini tu kali..kalau ya login ya save ke db</h3>";
+    }
+
+    $username = $_POST['username'];
+    if(!empty($username)){
+    // $host = "localhost";
+    // $dbusername = "root";
+    // $dbname = "quizbn";
+    
+    //create connection
+    // $conn = new mysqli ($host, $dbusername, $dbname);
+    $conn = new mysqli('localhost', 'root', '', 'quizbn');
+    if(mysqli_connect_error()){
+      die('Connect error ('. mysqli_connect_errno().') '. mysqli_connect_error());
+    }
+    else{
+      $sql = "INSERT INTO user (username) values ('$username')";
+      if($conn->query($sql)){
+        echo "Successfully Added Your Username";
+      }else{
+        echo "Error: ". $sql ."<br>". $conn->error;
+      }
+      $conn->close();
+    }
+    
+    
+    }else{
+      echo "Please Enter Your Username ";
+      die();
     }
 ?>
 
 <body>
 <h1 class="level">Choose your level</h1>
 <form class="background" action="biginner.php" method="post">
+  
     <a href="biginner.php" type="submit" value="beginner" name="beginner" class="btn">Beginner</a>
     <a href="advance.php" type="submit" value="advance" name="advance" class="btn">Advance</a>
-</form>
+  </form>
+
+  
 </body>
+
 </html>
