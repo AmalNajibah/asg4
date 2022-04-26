@@ -148,20 +148,21 @@ if(mysqli_connect_error()){
 }
 else{
   $sql = "INSERT INTO advance (username) values ('$advan')";
-//   if($conn->query($sql)){
-//     echo "Successfully Added Your Username into database";
-//   }else{
-//     echo "Error: ". $sql ."<br>". $conn->error;
-//   }
+  if($conn->query($sql)){
+    echo "Successfully Added Your Username into database";
+  }else{
+    echo "Error: ". $sql ."<br>". $conn->error;
+  }
   $conn->close();
 }
 
 
 }else{
-//   echo "Please Enter Your Username ";
+  echo "Please Enter Your Username ";
   die();
 }
 ?>
+
 
 <body>
 <form action="advanceresult.php" method="post" id="quiz">

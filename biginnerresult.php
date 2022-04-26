@@ -212,6 +212,7 @@ if($res){
 ?>
 </table>
 <br>
+<br>
 <a href="biginner.php" class="playagainbtn">Play again!</a><br><br>
 <a href="index.php" class="endbtn">End game!</a><br><br>
     

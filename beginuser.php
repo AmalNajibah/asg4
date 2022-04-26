@@ -105,10 +105,6 @@ input[type=text] {
 
 </style>
 
-
-
-
-
 <body class="bkgrdindex">
 
 <form class="background" action="biginner.php" method="post">

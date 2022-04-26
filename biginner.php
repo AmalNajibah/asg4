@@ -152,17 +152,17 @@ if(mysqli_connect_error()){
 }
 else{
   $sql = "INSERT INTO user (username) values ('$beginner')";
-//   if($conn->query($sql)){
-//     echo "Successfully Added Your Username into database";
-//   }else{
-//     echo "Error: ". $sql ."<br>". $conn->error;
-//   }
+  if($conn->query($sql)){
+    echo "Successfully Added Your Username into database";
+  }else{
+    echo "Error: ". $sql ."<br>". $conn->error;
+  }
   $conn->close();
 }
 
 
 }else{
-//   echo "Please Enter Your Username ";
+  echo "Please Enter Your Username ";
   die();
 }
 ?>
