@@ -9,6 +9,7 @@
 <style>
     body{
         background-image: url('img/kits.jpg');
+     
     }
 
 /* for submit button css */
@@ -70,6 +71,7 @@
 .musicplay{
   display:flex;
   justify-content: flex-end;
+  margin-right: 10px;
 }
 
 .musicbtn {
@@ -89,6 +91,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin-right: 10px;
 }
 
 .musicbtn:hover {
@@ -108,7 +111,7 @@
 }
 
 
-.quizbn{
+h1, .quizbn{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 10%;
     background-color:yellow;
@@ -117,6 +120,13 @@
     vertical-align: middle;
     line-height: 90px;
     color:black;
+}
+
+.btnGroup{
+    font-weight:bold;
+    font-size:25px;
+    text-align:center;
+    
 }
 </style>
 
@@ -142,17 +152,17 @@ if(mysqli_connect_error()){
 }
 else{
   $sql = "INSERT INTO user (username) values ('$beginner')";
-  if($conn->query($sql)){
-    echo "Successfully Added Your Username into database";
-  }else{
-    echo "Error: ". $sql ."<br>". $conn->error;
-  }
+//   if($conn->query($sql)){
+//     echo "Successfully Added Your Username into database";
+//   }else{
+//     echo "Error: ". $sql ."<br>". $conn->error;
+//   }
   $conn->close();
 }
 
 
 }else{
-  echo "Please Enter Your Username ";
+//   echo "Please Enter Your Username ";
   die();
 }
 ?>
@@ -167,7 +177,7 @@ else{
 </audio>
 <button class="musicbtn" onclick="playAudio()" type="button">Music on !</button><br><br>
 <button class="musicbtn" onclick="pauseAudio()" type="button">Pause music ! </button>
-</div>
+</div><br><br>
 
 <!-- timer -->
 <div class="btnGroup">Timer
