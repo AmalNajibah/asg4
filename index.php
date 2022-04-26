@@ -15,23 +15,13 @@ body{
     display:flex; flex-direction:column; justify-content:center;
     min-height:100vh;
     padding: 0 16px;
-    background-image: url('img/kids.jpg');
+    /* background: url('img/kids.jpg'); */
 }
 
 body::after {
   content: "";
   clear: both;
   display: table;
-}
-
-.quizbn{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 10%;
-    background-color:yellow;
-    height: 100px;
-    max-weight:20px;
-    vertical-align: middle;
-    line-height: 90px;
 }
 
 /* CSS */
@@ -59,6 +49,8 @@ body::after {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin-right: 10px;
+  
 }
 
 .btn:hover {
@@ -77,14 +69,47 @@ body::after {
     padding: .75rem 2rem;
   }
 }
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+ h1, form{
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 </style>
 
 
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myVideo").autoplay;
+}
+</script>
+
 <body>
-<h1>Start playing Quiz.bn!</h1>
-<h1 class="level">Choose your level</h1>
-<form class="background" action="" method="post">
-  
+  <!-- The video -->
+<video id="myVideo" controls autoplay>
+  <source src="video/video.mp4" type="video/mp4">
+  </video>
+</div>
+
+
+<h1>Welcome to Quiz.bn!</h1>
+<h1 class="level">Please choose your level</h1>
+
+<form class="background" method="post">
+
     <a href="beginuser.php" type="submit" value="beginner" name="beginner" class="btn">Beginner</a>
     <a href="advanceuser.php" type="submit" value="advance" name="advance" class="btn">Advance</a>
   </form>
