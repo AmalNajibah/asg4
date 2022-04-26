@@ -119,7 +119,11 @@ h1, .quizbn{
     max-weight:20px;
     vertical-align: middle;
     line-height: 90px;
-    color:black;
+    text-align:center;
+    font-weight:bold;
+    font-size:25px;
+
+
 }
 
 .btnGroup{
