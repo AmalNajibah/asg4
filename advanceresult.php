@@ -120,6 +120,18 @@ body::after {
     font-weight: 700;
     line-height: 15.4px;
 }
+
+table, td{
+  border: 1px solid;
+  border-collapse:collapse;
+  margin:20px;
+    font-family: Play;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 15.4px;
+}
 </style>
 
 <body>
@@ -161,7 +173,46 @@ body::after {
 ?>
 </head>
 
-<h2>Scoreboard Top 5 goes here (mus)</h2><br><br>
+<h2>Scoreboard Top 5</h2>
+
+
+<?php
+$conn = new mysqli('localhost', 'root', '', 'quizbn');
+
+    $query="SELECT * FROM `advance`";
+    $res = $conn -> query($query);
+?>
+
+<table>
+  <tr>
+    <td>userID</td>
+    <td>username</td>
+  </tr>
+
+
+<?php
+if($res){
+  while($row=$res -> fetch_assoc())
+{
+?>
+
+<tr>
+  <?php
+  ?>
+  <td><?php echo $row['userID'];?>
+  <td><?php echo $row['username'];?>
+</tr>
+
+<?php
+  }
+}
+?>
+</table>
+<br>
+
+
+
+
 <a href="advance.php" class="playagainbtn">Play again!</a><br><br>
 <a href="index.php" class="endbtn">End Game!</a><br><br> 
 </body>

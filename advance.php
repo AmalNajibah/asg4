@@ -111,7 +111,51 @@ body{
     padding: 0 25px;
   }
 }
+
+.quizbn{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10%;
+    background-color:yellow;
+    height: 100px;
+    max-weight:20px;
+    vertical-align: middle;
+    line-height: 90px;
+}
 </style>
+
+<?php
+if(isset($_POST['submit'])) {
+    echo "<h1 class='quizbn'>Welcome to Quiz.bn ";
+    echo $_POST['advan'];
+    echo "</h1>";
+}
+
+$advan = $_POST['advan'];
+if(!empty($advan)){
+//create connection
+// $conn = new mysqli ($host, $dbusername, $dbname);
+$conn = new mysqli('localhost', 'root', '', 'quizbn');
+if(mysqli_connect_error()){
+  die('Connect error ('. mysqli_connect_errno().') '. mysqli_connect_error());
+}
+else{
+  $sql = "INSERT INTO advance (username) values ('$advan')";
+  if($conn->query($sql)){
+    echo "Successfully Added Your Username into database";
+  }else{
+    echo "Error: ". $sql ."<br>". $conn->error;
+  }
+  $conn->close();
+}
+
+
+}else{
+  echo "Please Enter Your Username ";
+  die();
+}
+?>
+
+
 
 <body>
 <form action="advanceresult.php" method="post" id="quiz">

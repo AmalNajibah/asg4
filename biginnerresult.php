@@ -175,83 +175,41 @@ table, td{
 
 
 <h2>Scoreboard Top 5</h2>
-       
-            
+
+
 <?php
-  
-/* Connection Variable ("Servername",
-"username","password","database") */
-// $con = mysqli_connect("localhost", 
-//         "root", "", "leaderboard");
-
-  
-/* Mysqli query to fetch rows 
-in descending order of marks */
-// $result = mysqli_query($con, "SELECT userName, 
-// marks FROM leaderboard ORDER BY marks DESC");
-
-  
-/* First rank will be 1 and 
-    second be 2 and so on */
-$ranking = 1;
-  
-/* Fetch Rows from the SQL query */
-// if (mysqli_num_rows($result)) {
-//     while ($row = mysqli_fetch_array($result)) {
-//         echo "<td>{$ranking}</td>
-//         <td>{$row['userName']}</td>
-//         <td>{$row['marks']}</td>";
-//         $ranking++;
-//     }
-// }
-
-//create connection
 $conn = new mysqli('localhost', 'root', '', 'quizbn');
-if(mysqli_connect_error()){
-  die('Connect error ('. mysqli_connect_errno().') '. mysqli_connect_error());
-}
 
-
-//insert score
-$sql = "INSERT INTO score, ranking (`score`,`ranking`) VALUES (`$totalCorrect`)";
-
-              $result = mysqli_query($conn, $sql);
-              if($result){
-                  echo 'Your Score Have Been Added';
-              }else{
-                  echo 'Cannot add your score';
-              }
-
-
-//get the username
-$result = mysqli_query($conn, "SELECT * FROM user");
-if (mysqli_num_rows($result) > 0){
-  ?>
-
-  <table>
-    <tr>
-      <td>username</td>
-      <td>score</td>
-      <td>ranking</td>
-</tr>
-      <?php
-      $i = 0;
-      while($row = mysqli_fetch_array($result)){
-        ?>
-        <tr>
-        <td><?php echo $row["username"]; ?></td>
-        <td><?php echo $row["$ranking"]; ?></td>
-        <td><?php echo $row["$totalCorrect"]; ?></td>
-        
-      </tr>
-      <?php
-
-      }
-}
-
-
+$offsetCounter=0;
+$limit=(5*$offsetCounter++);
+    $query="SELECT * FROM `user`";
+    $res = $conn -> query($query);
 ?>
 
+<table>
+  <tr>
+    <td>userID</td>
+    <td>username</td>
+  </tr>
+
+
+<?php
+if($res){
+  while($row=$res -> fetch_assoc())
+{
+?>
+
+<tr>
+  <?php
+  ?>
+  <td><?php echo $row['userID'];?>
+  <td><?php echo $row['username'];?>
+</tr>
+
+<?php
+  }
+}
+?>
 </table>
 <br>
 <a href="biginner.php" class="playagainbtn">Play again!</a><br><br>
