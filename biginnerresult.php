@@ -188,8 +188,8 @@ $limit=(5*$offsetCounter++);
 
 <table>
   <tr>
-    <td>userID</td>
-    <td>username</td>
+    <td>Score</td>
+    <td>Username</td>
   </tr>
 
 
@@ -213,7 +213,7 @@ if($res){
 </table>
 <br>
 <br>
-<a href="biginner.php" class="playagainbtn">Play again!</a><br><br>
+<a href="beginuser.php" class="playagainbtn">Play again!</a><br><br>
 <a href="index.php" class="endbtn">End game!</a><br><br>
     
 </body>

@@ -185,8 +185,8 @@ $conn = new mysqli('localhost', 'root', '', 'quizbn');
 
 <table>
   <tr>
-    <td>userID</td>
-    <td>username</td>
+    <td>Score</td>
+    <td>Username</td>
   </tr>
 
 
@@ -213,7 +213,7 @@ if($res){
 
 
 
-<a href="advance.php" class="playagainbtn">Play again!</a><br><br>
+<a href="advanceuser.php" class="playagainbtn">Play again!</a><br><br>
 <a href="index.php" class="endbtn">End Game!</a><br><br> 
 </body>
 </html>
